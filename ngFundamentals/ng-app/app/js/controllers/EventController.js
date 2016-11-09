@@ -9,8 +9,8 @@ eventsApp.controller('EventController',
         $scope.buttonDisabled = true;
         $scope.sortorder = 'name';
         $scope.event = eventData.getEvent($routeParams.eventId);
-        console.log($route.current.foo);
-        console.log($route.current.params.bar);//?bar=foo
+        // console.log($route.current.foo);
+        // console.log($route.current.params.bar);//?bar=foo
         $scope.upVoteSession = function (session) {
             session.upVoteCount++;
         };

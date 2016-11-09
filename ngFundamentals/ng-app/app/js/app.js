@@ -19,6 +19,19 @@ var eventsApp = angular.module('eventsApp', ['ngSanitize', 'ngResource', 'ngCook
                 controller: 'EventController'
             });
 
+            $routeProvider.when('/sampleDirective',
+            {
+                foo: 'bar',
+                templateUrl: 'templates/SampleDirective.html',
+                controller: 'SampleDirectiveController'
+            });
+
+            $routeProvider.when('/profile/edit',
+            {
+                templateUrl: 'templates/EditProfile.html',
+                controller: 'EditProfileController'
+            });
+
         $routeProvider.otherwise({ redirectTo: '/events' });
         $locationProvider.html5Mode({
             enabled: true,
